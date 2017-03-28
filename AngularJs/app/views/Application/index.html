@@ -1,0 +1,18 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+
+#{welcome /}
+
+<div ng-app>
+	<div ng-controller='Hellocontroller'>
+		<input ng-model='greeting.text'>
+		<p>{{greeting.text}}, world.</p>
+	</div>
+	<script>
+function HelloController($scope, $location){
+	$scope.greeting = {text:'hello'};
+	
+}
+</script>
+</div>
+
